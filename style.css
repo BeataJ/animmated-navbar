@@ -29,3 +29,9 @@ nav ul {
   font-size: 1.5rem;
   flex: 1;
 }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
