@@ -54,18 +54,15 @@ section h2 {
 }
 
 .home {
-  background: linear-gradient(to right, #ffedbc, #ed4264);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #fc354c, #0abfbc);
 }
 
 .project {
-  background: linear-gradient(to right, #ffb88c, #de6262);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #3d7eaa, #ffe47a);
 }
 
 .contact {
-  background: linear-gradient(to right, #cbad6d, #d53369);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #3ca55c, #b5ac49);
 }
 
 .bubble {

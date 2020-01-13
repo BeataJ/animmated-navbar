@@ -1,9 +1,9 @@
 const sections = document.querySelectorAll("section");
 const bubble = document.querySelector(".bubble");
 const gradients = [
-  "linear-gradient(to right, #ffb88c, #de6262)",
-  "linear-gradient(to right, #ffb88c, #de6262)",
-  "linear-gradient(to right, #cbad6d, #d53369)"
+  "linear-gradient(to right, #fc354c, #0abfbc)",
+  "linear-gradient(to right, #3d7eaa, #ffe47a)",
+  "linear-gradient(to right, #3ca55c, #b5ac49)"
 ];
 
 const options = {
@@ -30,6 +30,7 @@ function navCheck(entries) {
       bubble.style.setProperty("top", `${directions.top}px`);
       bubble.style.setProperty("width", `${directions.width}px`);
       bubble.style.setProperty("height", `${directions.height}px`);
+      bubble.style.background = gradients[gradientIndex];
     }
   });
 }
