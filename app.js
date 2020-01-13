@@ -15,7 +15,15 @@ let observer = new IntersectionObserver(navCheck, options);
 function navCheck(entries) {
   entries.forEach(entry => {
     const className = entry.target.className;
-    console.log(className);
+    const activeAncher = document.querySelector(`[data-page=${className}]`);
+    const gradientIndex = entry.target.getAttribute("data-index");
+    const coords = activeAncher.getBoundingClientRect();
+    const directions = {
+      height: coords.height,
+      width: coords.width,
+      top: coords.top,
+      left: coords.left
+    };
   });
 }
 
