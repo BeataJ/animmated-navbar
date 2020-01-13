@@ -14,3 +14,12 @@ header {
   top: 0px;
   background: white;
 }
+
+nav {
+  min-height: 10vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
