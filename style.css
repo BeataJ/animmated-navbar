@@ -24,7 +24,8 @@ nav {
   justify-content: space-between;
 }
 
-header h1,
-ul {
+nav h1,
+nav ul {
   font-size: 1.5rem;
+  flex: 1;
 }
