@@ -11,3 +11,13 @@ const options = {
 };
 
 let observer = new IntersectionObserver(navCheck, options);
+
+function navCheck(entries) {
+  entries.forEach(entry => {
+    console.log(entry);
+  });
+}
+
+sections.forEach(section => {
+  observer.observe(section);
+});
