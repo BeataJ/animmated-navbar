@@ -14,7 +14,8 @@ let observer = new IntersectionObserver(navCheck, options);
 
 function navCheck(entries) {
   entries.forEach(entry => {
-    console.log(entry);
+    const className = entry.target.className;
+    console.log(className);
   });
 }
 
