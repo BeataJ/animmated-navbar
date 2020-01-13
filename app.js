@@ -1,5 +1,5 @@
 const sections = document.querySelectorAll("section");
-const bubbel = document.querySelector(".bubbel");
+const bubble = document.querySelector(".bubble");
 const gradients = [
   "linear-gradient(to right, #ffb88c, #de6262)",
   "linear-gradient(to right, #ffb88c, #de6262)",
@@ -24,6 +24,13 @@ function navCheck(entries) {
       top: coords.top,
       left: coords.left
     };
+
+    if (entry.isIntersecting) {
+      bubble.style.setProperty("left", `${directions.left}px`);
+      bubble.style.setProperty("top", `${directions.top}px`);
+      bubble.style.setProperty("width", `${directions.width}px`);
+      bubble.style.setProperty("height", `${directions.height}px`);
+    }
   });
 }
 
